@@ -73,7 +73,7 @@ export default function SummariesShowcase() {
                 <FileText className="w-4 h-4" />
               </div>
               <div>
-                <h3 className="text-base font-bold text-gray-900">Kickoff Call — Fireflies.ai x Acme</h3>
+                <h3 className="text-base font-bold text-gray-900">Kickoff Call — Meetora x Acme</h3>
                 <p className="text-xs text-gray-500">Sarah Watts • Mar 15 • 11:30 AM</p>
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function SummariesShowcase() {
               <div className="space-y-3">
                 <span className="text-xs font-bold uppercase tracking-wider text-purple-700">Executive Summary</span>
                 <p>
-                  The meeting successfully outlined best practices for implementing Fireflies automated note-taking. Participants gained clarity on guidelines for using Fireflies in both internal sprint reviews and external client meetings.
+                  The meeting successfully outlined best practices for implementing Meetora automated note-taking. Participants gained clarity on guidelines for using Meetora in both internal sprint reviews and external client meetings.
                 </p>
                 <p>
                   Key features such as Chrome & Zoom integrations, AI customization, and transcript export workflows were discussed in detail.

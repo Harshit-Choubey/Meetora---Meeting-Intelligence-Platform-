@@ -15,7 +15,7 @@ export default function SecuritySection() {
             Enterprise-Grade Security & Privacy
           </h2>
           <p className="text-sm sm:text-base text-gray-600">
-            Fireflies is the preferred platform for CIOs across Fortune 500 companies offering robust admin controls and stringent security protocols.
+            Meetora is the preferred platform for modern teams and enterprises, offering robust admin controls and stringent security protocols.
           </p>
         </div>
 

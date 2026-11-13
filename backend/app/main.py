@@ -56,8 +56,8 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Fireflies Meeting Intelligence API",
-    description="REST API for Fireflies-inspired Meeting Intelligence Platform",
+    title="Meetora Meeting Intelligence API",
+    description="REST API for Meetora AI-powered Meeting Intelligence Platform",
     version="1.0.0",
     lifespan=lifespan,
 )
@@ -89,4 +89,4 @@ app.include_router(search_router, prefix=api_prefix)
 @app.get("/api/v1/health", tags=["health"])
 def health_check():
     """Health check endpoint to verify backend service status."""
-    return {"status": "ok", "service": "fireflies-backend"}
+    return {"status": "ok", "service": "meetora-backend"}

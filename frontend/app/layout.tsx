@@ -5,8 +5,17 @@ import { ToastProvider } from '@/providers/ToastContext';
 import { PlayerSyncProvider } from '@/providers/PlayerSyncContext';
 
 export const metadata: Metadata = {
-  title: 'Fireflies.ai — Meeting Intelligence Platform',
-  description: 'Post-meeting workspace, interactive transcripts, media playback, and automated meeting notes.',
+  title: 'Meetora — AI-powered Meeting Intelligence Platform',
+  description: 'Make every meeting matter. Turn conversations into searchable knowledge, actionable insights, and meaningful decisions.',
+  icons: {
+    icon: '/icon.svg',
+  },
+  openGraph: {
+    title: 'Meetora — AI-powered Meeting Intelligence Platform',
+    description: 'Make every meeting matter. Turn conversations into searchable knowledge, actionable insights, and meaningful decisions.',
+    siteName: 'Meetora',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({

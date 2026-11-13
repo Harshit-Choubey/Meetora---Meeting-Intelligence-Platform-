@@ -47,12 +47,23 @@ export default function MarketingHeader() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo & Brand */}
         <div className="flex items-center gap-8">
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#7C4DFF] to-purple-400 flex items-center justify-center shadow-lg shadow-purple-900/40 group-hover:scale-105 transition-transform">
-              <Sparkles className="w-5 h-5 text-white" />
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#7C4DFF] via-[#6F3FF0] to-[#B388FF] flex items-center justify-center shadow-lg shadow-purple-900/40 group-hover:scale-105 transition-transform">
+              <svg
+                className="w-4 h-4 text-white"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M5 19V7l7 6 7-6v12" />
+                <circle cx="12" cy="7.5" r="1.25" fill="currentColor" stroke="none" />
+              </svg>
             </div>
-            <span className="text-xl font-bold tracking-tight text-white flex items-center gap-0.5">
-              fireflies<span className="text-[#7C4DFF] font-extrabold">.ai</span>
+            <span className="text-xl font-extrabold tracking-tight text-white">
+              Meetora
             </span>
           </Link>
 
@@ -91,7 +102,7 @@ export default function MarketingHeader() {
                       <Zap className="w-5 h-5 text-amber-400 mt-0.5 group-hover:scale-110 transition-transform" />
                       <div>
                         <div className="text-sm font-semibold text-white flex items-center gap-1.5">
-                          Fireflies AI Skills
+                          Meetora AI Skills
                           <span className="bg-purple-500/20 text-purple-300 text-[10px] px-1.5 py-0.2 rounded-full font-bold">
                             NEW
                           </span>
@@ -115,7 +126,7 @@ export default function MarketingHeader() {
                     <div>
                       <div className="flex items-center gap-2 text-xs font-bold text-purple-300 mb-1">
                         <Bot className="w-4 h-4 text-[#7C4DFF]" />
-                        AskFred AI Assistant
+                        Meetora AI Assistant
                       </div>
                       <p className="text-xs text-gray-300 leading-relaxed">
                         Query your entire meeting history using natural language powered by GPT-4o.
@@ -125,7 +136,7 @@ export default function MarketingHeader() {
                       href="/login"
                       className="mt-3 inline-flex items-center justify-center gap-1 text-xs font-bold text-white bg-[#7C4DFF] hover:bg-[#6F3FF0] py-2 px-3 rounded-lg transition-colors"
                     >
-                      Try AskFred Free <ArrowRight className="w-3 h-3" />
+                      Try Meetora AI Free <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>
                 </div>

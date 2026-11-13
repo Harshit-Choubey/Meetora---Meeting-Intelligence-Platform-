@@ -1,6 +1,7 @@
-# Fireflies Meeting Intelligence Platform
+# Meetora
+### Make every meeting matter.
 
-A production-quality full-stack Fireflies.ai-inspired Meeting Intelligence Platform built as part of a technical assignment.
+**Meetora is an AI-powered meeting intelligence platform that transforms conversations into searchable knowledge, meaningful decisions, and actionable outcomes.**
 
 This project delivers a complete post-meeting workspace featuring an interactive transcript synchronized with media playback, automated AI summaries, key topic outlines, decision tracking, action item CRUD, global search, tag filtering, and export capabilities.
 
@@ -9,51 +10,51 @@ This project delivers a complete post-meeting workspace featuring an interactive
 ## 🏗 System Architecture
 
 ```
-                               Browser
-                                  │
-                                  ▼
-                       ┌────────────────────┐
-                       │      Next.js       │
-                       │    TypeScript      │
-                       │                    │
-                       │ App Router         │
-                       │ UI Components      │
-                       │ TanStack Query     │
-                       │ Player Context     │
-                       └─────────┬──────────┘
-                                 │
-                             REST / JSON
+                              Browser
                                  │
                                  ▼
-                       ┌────────────────────┐
-                       │      FastAPI       │
-                       │                    │
-                       │ API Routers        │
-                       │ Pydantic Schemas   │
-                       │ Service Layer      │
-                       │ Parsers / AI       │
-                       └─────────┬──────────┘
-                                 │
-                           SQLAlchemy 2
-                                 │
-                                 ▼
-                       ┌────────────────────┐
-                       │      SQLite        │
-                       │                    │
-                       │ Meetings           │
-                       │ Participants       │
-                       │ Transcript         │
-                       │ Summary            │
-                       │ Topics             │
-                       │ Actions            │
-                       │ Decisions          │
-                       │ Tags               │
-                       └────────────────────┘
+                      ┌────────────────────┐
+                      │      Next.js       │
+                      │    TypeScript      │
+                      │                    │
+                      │ App Router         │
+                      │ UI Components      │
+                      │ TanStack Query     │
+                      │ Player Context     │
+                      └─────────┬──────────┘
+                                │
+                            REST / JSON
+                                │
+                                ▼
+                      ┌────────────────────┐
+                      │      FastAPI       │
+                      │                    │
+                      │ API Routers        │
+                      │ Pydantic Schemas   │
+                      │ Service Layer      │
+                      │ Parsers / AI       │
+                      └─────────┬──────────┘
+                                │
+                          SQLAlchemy 2
+                                │
+                                ▼
+                      ┌────────────────────┐
+                      │      SQLite        │
+                      │                    │
+                      │ Meetings           │
+                      │ Participants       │
+                      │ Transcript         │
+                      │ Summary            │
+                      │ Topics             │
+                      │ Actions            │
+                      │ Decisions          │
+                      │ Tags               │
+                      └────────────────────┘
 
-                       FastAPI static media
-                                 │
-                                 ▼
-                       demo-meeting.mp3
+                      FastAPI static media
+                                │
+                                ▼
+                      demo-meeting.mp3
 ```
 
 ---
@@ -62,7 +63,7 @@ This project delivers a complete post-meeting workspace featuring an interactive
 
 ### P0 — Core Functionality
 - **Meetings Library Dashboard**: Filter by date range, participant name, or search query. Sort by recency.
-- **Fireflies Workspace (Notepad)**: Two-panel layout featuring AI Overview summary, Key Topics outline, Decisions, and Action Items.
+- **Meetora Workspace (Notepad)**: Two-panel layout featuring AI Overview summary, Key Topics outline, Decisions, and Action Items.
 - **Interactive Transcript**: Speaker avatars, timestamps, active segment highlighting, and local substring search.
 - **Transcript ↔ Player Synchronization**:
   - Click transcript timestamp → Media player seeks to timestamp and plays.
@@ -74,7 +75,8 @@ This project delivers a complete post-meeting workspace featuring an interactive
 ### P1 — High-Value Enhancements
 - **Global Search**: Cross-meeting search across titles, participants, transcripts, summaries, topics, decisions, and action items.
 - **Tag Management**: Categorize meetings (Engineering, Product, Client, Sprint) and filter library by tags.
-- **Exporting**: Export transcript, summary, and action items to Markdown (`.md`) and Plain Text (`.txt`).
+- **Exporting**: Export transcript, summary, and action items to Markdown (`.md`), Plain Text (`.txt`), and PDF document format.
+- **Meetora AI Assistant**: Context-aware natural language Q&A interface for extracting instant answers from meeting transcripts.
 
 ---
 
@@ -123,6 +125,9 @@ Built using **SQLAlchemy 2.0** on **SQLite 3** with foreign key constraints expl
 
 ### Global Search
 - `GET /api/v1/search?q={query}`
+
+### Health
+- `GET /api/v1/health`
 
 ---
 

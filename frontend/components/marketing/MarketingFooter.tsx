@@ -12,16 +12,27 @@ export default function MarketingFooter() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-xs">
           {/* Column 1 Brand */}
           <div className="col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-xl bg-gradient-to-tr from-[#7C4DFF] to-purple-400 flex items-center justify-center shadow-md">
-                <Sparkles className="w-4 h-4 text-white" />
+            <Link href="/" className="flex items-center gap-2.5">
+              <div className="w-7 h-7 rounded-xl bg-gradient-to-tr from-[#7C4DFF] via-[#6F3FF0] to-[#B388FF] flex items-center justify-center shadow-md">
+                <svg
+                  className="w-3.5 h-3.5 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 19V7l7 6 7-6v12" />
+                  <circle cx="12" cy="7.5" r="1.25" fill="currentColor" stroke="none" />
+                </svg>
               </div>
-              <span className="text-lg font-bold tracking-tight text-white">
-                fireflies<span className="text-[#7C4DFF]">.ai</span>
+              <span className="text-lg font-extrabold tracking-tight text-white">
+                Meetora
               </span>
             </Link>
             <p className="text-gray-400 leading-relaxed max-w-sm">
-              Fireflies.ai automates meeting notes, transcription, and action items for teams across Zoom, Google Meet, and Microsoft Teams.
+              Meetora automates meeting notes, transcription, and action items for teams across Zoom, Google Meet, and Microsoft Teams.
             </p>
             <div className="flex items-center gap-3 text-gray-400">
               <Twitter className="w-4 h-4 hover:text-white cursor-pointer transition-colors" />
@@ -38,7 +49,7 @@ export default function MarketingFooter() {
               <li><Link href="/meetings" className="hover:text-white transition-colors">Notetaker Bot</Link></li>
               <li><Link href="/skills" className="hover:text-white transition-colors">AI Skills Store</Link></li>
               <li><Link href="/analytics" className="hover:text-white transition-colors">Conversation Intel</Link></li>
-              <li><Link href="/meetings" className="hover:text-white transition-colors">AskFred Assistant</Link></li>
+              <li><Link href="/meetings" className="hover:text-white transition-colors">Meetora AI Assistant</Link></li>
               <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
             </ul>
           </div>
@@ -70,7 +81,7 @@ export default function MarketingFooter() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
-          <p>© 2026 Fireflies.ai Corp. All rights reserved.</p>
+          <p>© 2026 Meetora Inc. All rights reserved.</p>
           <div className="flex items-center gap-4 font-mono text-[11px]">
             <span>English (US)</span>
             <span>•</span>

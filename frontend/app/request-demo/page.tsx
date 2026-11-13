@@ -22,12 +22,23 @@ export default function RequestDemoPage() {
       {/* Navigation Header */}
       <header className="bg-[#0F0826] text-white p-4 border-b border-white/10">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#7C4DFF] to-purple-400 flex items-center justify-center">
-              <Sparkles className="w-5 h-5 text-white" />
+          <Link href="/" className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#7C4DFF] via-[#6F3FF0] to-[#B388FF] flex items-center justify-center">
+              <svg
+                className="w-4 h-4 text-white"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M5 19V7l7 6 7-6v12" />
+                <circle cx="12" cy="7.5" r="1.25" fill="currentColor" stroke="none" />
+              </svg>
             </div>
-            <span className="text-xl font-bold tracking-tight text-white">
-              fireflies<span className="text-[#7C4DFF]">.ai</span>
+            <span className="text-xl font-extrabold tracking-tight text-white">
+              Meetora
             </span>
           </Link>
 
@@ -45,7 +56,7 @@ export default function RequestDemoPage() {
         <div className="bg-white border border-gray-200 rounded-3xl p-8 shadow-xl space-y-6">
           <div className="text-center space-y-2">
             <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
-              Get a Personalized Demo with Fireflies.ai
+              Get a Personalized Demo with Meetora
             </h1>
             <p className="text-xs text-gray-500 leading-relaxed">
               Trusted by over 500K businesses and 20M users to automatically transform meetings into a powerful, searchable knowledge base.
@@ -128,7 +139,7 @@ export default function RequestDemoPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900">Demo Scheduled!</h3>
               <p className="text-xs text-gray-600">
-                Our team will reach out to schedule your personalized Fireflies.ai walk-through.
+                Our team will reach out to schedule your personalized Meetora walk-through.
               </p>
               <button
                 onClick={() => router.push('/meetings')}
@@ -142,7 +153,7 @@ export default function RequestDemoPage() {
       </main>
 
       <footer className="p-4 text-center text-xs text-gray-400">
-        © 2026 Fireflies.ai Corp. All rights reserved.
+        © 2026 Meetora Inc. All rights reserved.
       </footer>
     </div>
   );

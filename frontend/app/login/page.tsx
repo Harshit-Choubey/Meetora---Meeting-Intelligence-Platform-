@@ -25,12 +25,23 @@ export default function LoginPage() {
     <div className="min-h-screen bg-[#0F0826] text-white flex flex-col justify-between">
       {/* Header */}
       <header className="p-6 max-w-7xl w-full mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#7C4DFF] to-purple-400 flex items-center justify-center shadow-lg shadow-purple-900/40">
-            <Sparkles className="w-5 h-5 text-white" />
+        <Link href="/" className="flex items-center gap-2.5">
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#7C4DFF] via-[#6F3FF0] to-[#B388FF] flex items-center justify-center shadow-lg shadow-purple-900/40">
+            <svg
+              className="w-4 h-4 text-white"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 19V7l7 6 7-6v12" />
+              <circle cx="12" cy="7.5" r="1.25" fill="currentColor" stroke="none" />
+            </svg>
           </div>
-          <span className="text-xl font-bold tracking-tight text-white">
-            fireflies<span className="text-[#7C4DFF]">.ai</span>
+          <span className="text-xl font-extrabold tracking-tight text-white">
+            Meetora
           </span>
         </Link>
 
@@ -55,7 +66,7 @@ export default function LoginPage() {
                 Get the #1 AI Assistant for Your Meetings
               </h1>
               <p className="text-xs text-gray-400 leading-relaxed">
-                By continuing, you agree to Fireflies's Terms of Service and Privacy Policy.
+                By continuing, you agree to Meetora's Terms of Service and Privacy Policy.
               </p>
             </div>
 
@@ -140,7 +151,7 @@ export default function LoginPage() {
             {/* Quote */}
             <div className="space-y-3 pt-4 border-t border-white/10">
               <p className="text-xs text-gray-300 italic leading-relaxed">
-                "Fireflies keeps me 100% present in meetings without losing any of the critical notes or action items."
+                "Meetora keeps me 100% present in meetings without losing any of the critical notes or action items."
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-[#7C4DFF] text-white font-bold text-xs flex items-center justify-center">
@@ -158,7 +169,7 @@ export default function LoginPage() {
 
       {/* Footer */}
       <footer className="p-4 text-center text-xs text-gray-500 font-mono">
-        © 2026 Fireflies.ai Corp. All rights reserved.
+        © 2026 Meetora Inc. All rights reserved.
       </footer>
     </div>
   );

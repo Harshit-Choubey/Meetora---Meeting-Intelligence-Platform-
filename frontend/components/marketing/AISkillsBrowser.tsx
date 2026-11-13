@@ -79,7 +79,7 @@ export default function AISkillsBrowser() {
         {/* Title */}
         <div className="text-center space-y-3 max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-purple-100 text-[#7C4DFF] rounded-full text-xs font-bold">
-            <Sparkles className="w-3.5 h-3.5" /> Fireflies AI Apps & Apps Library
+            <Sparkles className="w-3.5 h-3.5" /> Meetora AI Apps & Skills Library
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
             Go Beyond Notetaking With <span className="text-[#7C4DFF]">200+ AI Skills</span>

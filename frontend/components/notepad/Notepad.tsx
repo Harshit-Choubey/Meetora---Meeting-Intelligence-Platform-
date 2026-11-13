@@ -65,7 +65,7 @@ export default function Notepad({
           }`}
         >
           <Bot className="w-3.5 h-3.5" />
-          <span>AskFred Meeting Q&A</span>
+          <span>Meetora AI Assistant</span>
         </button>
       </div>
 

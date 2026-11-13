@@ -1,5 +1,5 @@
 """
-Seed script for Fireflies Meeting Intelligence Platform.
+Seed script for Meetora Meeting Intelligence Platform.
 
 Populates realistic sample meetings with complete:
 - Participants

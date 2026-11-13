@@ -71,7 +71,7 @@ export default function PricingPage() {
                 <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-emerald-500" /> Unlimited transcription credits</li>
                 <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-emerald-500" /> 8,000 mins storage / seat</li>
                 <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-emerald-500" /> Action item extraction & search</li>
-                <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-emerald-500" /> AskFred AI Assistant access</li>
+                <li className="flex items-center gap-2"><Check className="w-3.5 h-3.5 text-emerald-500" /> Meetora AI Assistant access</li>
               </ul>
             </div>
             <Link href="/login" className="w-full py-2.5 bg-[#7C4DFF] hover:bg-[#6F3FF0] text-white text-xs font-bold rounded-xl text-center shadow-md">

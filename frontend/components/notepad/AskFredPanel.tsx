@@ -25,7 +25,7 @@ export default function AskFredPanel({
   const [messages, setMessages] = useState<Message[]>([
     {
       sender: 'assistant',
-      text: `Hi! I'm Fred, your Meeting Assistant. Ask me anything about "${meetingTitle}" — key decisions, action items, or specific topics discussed!`,
+      text: `Hi! I'm your Meetora AI Assistant. Ask me anything about "${meetingTitle}" — key decisions, action items, or specific topics discussed!`,
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     },
   ]);
@@ -121,7 +121,7 @@ export default function AskFredPanel({
           </div>
           <div>
             <h3 className="text-sm font-bold text-gray-900 flex items-center gap-1.5">
-              AskFred AI Assistant
+              Meetora AI Assistant
               <Sparkles className="w-3.5 h-3.5 text-[#7C4DFF]" />
             </h3>
             <p className="text-[11px] text-gray-500">Ask questions about this meeting</p>
@@ -190,7 +190,7 @@ export default function AskFredPanel({
         {loading && (
           <div className="flex items-center gap-2 text-xs text-gray-400 py-2">
             <RefreshCw className="w-3.5 h-3.5 animate-spin text-[#7C4DFF]" />
-            <span>Fred is analyzing transcript context...</span>
+            <span>Meetora AI Assistant is analyzing transcript context...</span>
           </div>
         )}
       </div>
@@ -207,7 +207,7 @@ export default function AskFredPanel({
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Ask Fred a question about this meeting..."
+          placeholder="Ask Meetora AI Assistant a question about this meeting..."
           className="flex-1 px-3.5 py-2 bg-gray-50 border border-gray-200 rounded-xl text-xs text-gray-900 placeholder-gray-400 focus:bg-white focus:border-[#7C4DFF] focus:outline-hidden"
         />
         <button

@@ -71,7 +71,7 @@ export default function SkillsPage() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-200 pb-4">
           <div>
             <h1 className="text-2xl font-extrabold text-gray-900 flex items-center gap-2">
-              <Zap className="w-6 h-6 text-amber-500" /> Fireflies AI Apps & 200+ Skills Store
+              <Zap className="w-6 h-6 text-amber-500" /> Meetora AI Apps & 200+ Skills Store
             </h1>
             <p className="text-xs text-gray-500">
               Enable specialized AI skills to automatically extract insights, score calls, and format meeting summaries.

@@ -73,7 +73,7 @@ export default function HeroSection() {
                 <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
               </div>
               <div className="text-[11px] font-mono text-gray-400 bg-white/5 px-3 py-0.5 rounded-full border border-white/10">
-                app.fireflies.ai/meetings/demo-kickoff
+                app.meetora.ai/meetings/demo-kickoff
               </div>
               <div className="text-xs text-purple-400 font-semibold flex items-center gap-1">
                 <Sparkles className="w-3 h-3" /> Live Workspace
@@ -83,7 +83,7 @@ export default function HeroSection() {
             {/* Preview Banner Grid */}
             <div className="bg-[#10072F] rounded-2xl p-4 text-left grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-white/5 p-4 rounded-xl border border-white/10 space-y-2">
-                <div className="text-xs font-bold text-purple-300">Kickoff Call — Fireflies.ai x Acme</div>
+                <div className="text-xs font-bold text-purple-300">Kickoff Call — Meetora x Acme</div>
                 <div className="text-[11px] text-gray-400">Sarah Watts • 3m 15s • 3 Participants</div>
                 <div className="pt-2 text-xs text-gray-300 leading-relaxed bg-black/30 p-2.5 rounded-lg border border-white/5">
                   <span className="text-[#7C4DFF] font-bold">Overview:</span> The team aligned on SQLite WAL mode, binary search sync, and AI summary notes export.
@@ -105,7 +105,7 @@ export default function HeroSection() {
               </div>
 
               <div className="bg-white/5 p-4 rounded-xl border border-white/10 space-y-2">
-                <div className="text-xs font-bold text-emerald-300">AskFred AI Assistant</div>
+                <div className="text-xs font-bold text-emerald-300">Meetora AI Assistant</div>
                 <div className="text-xs text-gray-300 italic bg-purple-950/40 p-2 rounded-lg border border-purple-800/40">
                   "What were the primary decisions made regarding query optimization?"
                 </div>
